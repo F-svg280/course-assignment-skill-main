@@ -1,0 +1,10 @@
+# 密钥、隐私
+API_KEY*
+*.key
+*.secret
+# 缓存临时文件
+*.tmp
+*.log
+.DS_Store
+__pycache__/
+# 不要忽略作业需要的 md html 文件

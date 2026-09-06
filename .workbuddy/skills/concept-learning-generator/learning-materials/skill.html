@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="2A1Fv0lP5JVoDrR067iaVa" data-dm-ref="1"><head data-page-node-id="3xSkVh9mpEK8etGYHhwpNC">
+<meta charset="UTF-8" data-page-node-id="rY0Bd1l46VVMQEPz9vheRU">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="QL3gHKp605PHYDEZB08HkP">
+<title>学习资料 · Skill（技能 / Agent Skills）</title>
+<style>
+  :root{
+    --ink:#1f2430; --sub:#5a6270; --line:#e3e7ee; --bg:#f7f8fa;
+    --card:#ffffff; --accent:#2563eb; --accent-soft:#eff4ff;
+    --ok:#15803d; --ok-soft:#f0faf3; --warn:#b45309; --warn-soft:#fdf6ec;
+    --code:#f1f3f7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.75;font-size:16px}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 24px 80px}
+  header.hero{background:linear-gradient(135deg,#eff4ff 0%,#f7f8fa 70%);
+    border:1px solid var(--line);border-radius:16px;padding:28px 32px;margin-bottom:24px}
+  .kicker{font-size:13px;letter-spacing:.12em;color:var(--accent);font-weight:600}
+  h1{margin:6px 0 4px;font-size:32px;line-height:1.3}
+  .en{color:var(--sub);font-size:15px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .chip{font-size:13px;background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:3px 12px;color:var(--sub)}
+  nav.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:16px 22px;margin-bottom:28px;font-size:14px}
+  nav.toc a{color:var(--accent);text-decoration:none;margin-right:16px;white-space:nowrap}
+  nav.toc a:hover{text-decoration:underline}
+  section{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:24px 28px;margin-bottom:24px}
+  h2{font-size:20px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;
+    background:var(--accent-soft);color:var(--accent);border-radius:8px;
+    font-size:14px;font-weight:700;flex:none}
+  .hint{color:var(--sub);font-size:13.5px;margin:0 0 14px}
+  h3{font-size:15.5px;margin:18px 0 6px;color:var(--ink)}
+  p{margin:8px 0}
+  ul,ol{margin:8px 0;padding-left:24px}
+  li{margin:4px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top}
+  th{background:var(--accent-soft);font-weight:600}
+  blockquote{margin:12px 0;padding:10px 16px;border-left:4px solid var(--accent);
+    background:var(--accent-soft);border-radius:0 8px 8px 0;color:var(--ink)}
+  code{background:var(--code);border-radius:5px;padding:1px 6px;font-size:13.5px;
+    font-family:Consolas,Menlo,monospace}
+  pre{background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 18px;
+    overflow:auto;font-size:13.5px;line-height:1.6}
+  pre code{background:none;padding:0;color:inherit}
+  .analogy{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+  .analogy div{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;font-size:14px}
+  .analogy b{color:var(--accent)}
+  .callout{border-radius:10px;padding:12px 16px;margin:12px 0;font-size:14.5px}
+  .callout.ok{background:var(--ok-soft);border:1px solid #cdeed8}
+  .callout.warn{background:var(--warn-soft);border:1px solid #f2e2c8}
+  .src{font-size:13.5px;color:var(--sub);word-break:break-all}
+  .src a{color:var(--accent)}
+  .qa{border-top:1px dashed var(--line);padding-top:10px;margin-top:10px}
+  .ans{background:var(--ok-soft);border-radius:8px;padding:8px 14px;margin-top:8px;font-size:14.5px}
+  footer{color:var(--sub);font-size:13px;text-align:center;margin-top:12px}
+  .fig{background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0;text-align:center}
+  .fig figcaption{font-size:13px;color:var(--sub);margin-top:6px}
+  @media (max-width:640px){.analogy{grid-template-columns:1fr}}
+</style>
+<style id="__dm_no_drag_style__">* { -webkit-user-drag: none !important; }</style><style id="__dm_bindable_badge_style__">[data-sp-bindable="database"]{outline:1px dashed #0088ff;outline-offset:2px;border-radius:4px;}[data-sp-bindable="database"] *{pointer-events:none !important;transition:none !important;animation:none !important;}[data-sp-bindable="database"]{transition:none !important;animation:none !important;}</style></head>
+<body data-page-node-id="VGWv92TDe4XVtGB73FX2g5" style="">
+<div class="wrap" data-page-node-id="ggPZPYT6ZlC33EBF5dHO5f">
+
+<header class="hero" data-page-node-id="Fw2nNFjqX9S8hU9EdbqMYG">
+  <div class="kicker" data-page-node-id="bRyF0dco1yk2oE6GzU2R0b">CONCEPT LEARNING MATERIAL · 概念学习资料</div>
+  <h1 data-page-node-id="Tnm929Kh6GgAo1qOib9PVW">Skill（技能 / Agent Skills）</h1>
+  <div class="en" data-page-node-id="XPrd21pqQYINjbPcjjHMDt">把领域知识打包成文件夹，让 AI 在正确的时候自己翻开的说明书 —— SKILL.md 范式</div>
+  <div class="meta" data-page-node-id="P4Ew68MQUWeO0jIZZ4saeA">
+    <span class="chip" data-page-node-id="YvtNpoM07LHzqdmECKNSgZ">学习者水平：有基础</span>
+    <span class="chip" data-page-node-id="Tr3PTmbI33BDt1tJILpWWJ">学习目的：工程应用 + 面试</span>
+    <span class="chip" data-page-node-id="LQNVDRLBPelintTuWRS2Jd">语言：中文（术语保留英文）</span>
+    <span class="chip" data-page-node-id="OalIqBKIoQ9ViHxRkPEaK8">来源约束：仅 arXiv 与 Anthropic 公开来源</span>
+    <span class="chip" data-page-node-id="Mk869l3scPQgUbHSU5X1cL">生成日期：2026-09-06（v2 来源修订）</span>
+  </div>
+</header>
+
+<nav class="toc" data-page-node-id="UXdCWX8FFDH4AAjFQIdwRn">
+  <a href="#m1" data-page-node-id="eQ4ODMwYQPtDhPs2mYusFx">① 概念个人解释</a>
+  <a href="#m2" data-page-node-id="zzmj5kBOLSSlxD1h9ey69C">② 核心机制组成</a>
+  <a href="#m3" data-page-node-id="KgfajOHjgHPYgcubYkjEqu">③ 应用场景</a>
+  <a href="#m4" data-page-node-id="S59iGEZcNPIx63B6HDM6S4">④ 易混淆边界</a>
+  <a href="#m5" data-page-node-id="eXXH7NxCwAUlKbPKU5SzWC">⑤ 参考来源</a>
+  <a href="#m6" data-page-node-id="VCEC6sLBKfrnaKhWj7ZflP">⑥ 学习目标</a>
+  <a href="#m7" data-page-node-id="oJ46iqcC0EJCDK5xhj57A4">⑦ 核心思考题</a>
+  <a href="#m8" data-page-node-id="0zijj3lvHQj4EDXggF52j3">⑧ 自测问题</a>
+</nav>
+
+<!-- ================= 模块 1 ================= -->
+<section id="m1" data-page-node-id="v9eQL4muSwe8sff6jHhtRW">
+  <h2 data-page-node-id="YbWfPEGsV6LSuismas56xW"><span class="num" data-page-node-id="4KtuUkXRA3oNEHp4vuTrir">1</span>概念个人解释</h2>
+  <p class="hint" data-page-node-id="kSer6vqIHFxxlzVPncdI1u">用自己的话讲清楚 Skill 是什么，并说明比喻与概念的对应关系。</p>
+
+  <p data-page-node-id="rtThWHVqqAfcf7hSVJBGqA"><b data-page-node-id="yis3nCBsod20ZbfzX5OiwZ">我的解释：</b>大模型是通才，但通才缺两样东西：<b data-page-node-id="HG7bLpa4y4AvBgvoWw0ubo">专业岗位的"怎么做"</b>（公司特有的流程、规范、坑点）和<b data-page-node-id="lEFk4x5w0OOqDx5ODmnFjT">可复用的执行包</b>（脚本、模板、参考案例）。Skill（Agent Skills / SKILL.md 范式）就是解决这个问题的产物：把某个领域的知识整理成一个<b data-page-node-id="VxzgMqLmwnYWJyA9cYEJP8">文件夹</b>——里面一本主手册（<code data-page-node-id="HxkiUV2ubPSLTgEZ3jEg0u">SKILL.md</code>）加若干附件（脚本、参考资料、模板），放进 AI 的技能目录。AI 平时只记住每本手册<b data-page-node-id="uDtdxTLmngHFJOVUEcAQ2z">封面上的摘要</b>（几十个 token 的 description），一旦任务匹配，才把手册<b data-page-node-id="QoysbmlcJ0khNRlEkE4VpR">抽出来读</b>，需要时再执行附带的脚本。</p>
+
+  <p data-page-node-id="G84Vp9HuBTcnwtlVikX10d">我认为 Skill 概念最精髓的一点是<b data-page-node-id="usGf2yGIBe2of01ZofGNOt">按需展开</b>：它不是把知识一股脑塞进上下文，而是像图书馆一样——目录常驻、正文按借阅、附件按页码翻。这让"装 100 个技能"和"装 1 个技能"对日常对话的上下文占用几乎一样。</p>
+
+  <p data-page-node-id="xPA3k5DkztPDhj4odp8sif"><b data-page-node-id="alL0RRjmWMXd4McmaQqkrg">比喻：</b>Skill 是给 AI 配的<b data-page-node-id="A6ODglYrHauCIuGmpkWgkP">"岗位 SOP 手册 + 工具包"</b>。新员工（AI）入职时不需要背下全公司所有岗位的操作手册，只需要知道档案柜里<b data-page-node-id="g0FjTND8V7JJ0RRxhE0E7s">有哪些手册、各管什么事</b>；接到出纳的活儿，就抽出《出纳手册》按步骤来，手册附录里还有现成的 Excel 模板（脚本）可以直接用。</p>
+
+  <div class="analogy" data-page-node-id="ArEwoVzsrSVP18wxxCvK4H">
+    <div data-page-node-id="XyEQLSy2SYAJjT3CKFZuHC"><b data-page-node-id="RWCM9V7dGBlLOzRSO3Ey7V">比喻中的档案柜</b></div><div data-page-node-id="DkgLx8oJFeRsQ6FCR3HkVT"><b data-page-node-id="punkTCfQ309hEZ5EehHBID">Skill 系统中的对应物</b></div>
+    <div data-page-node-id="7ymFjgzFM2nlGeTAhqsQEm">档案柜本身</div><div data-page-node-id="eDfs7DA2QFsd2a83eZXBIh">技能目录（如 <code data-page-node-id="ZKDpyPqvsbosWyFqg0FgFw">.workbuddy/skills/</code>）</div>
+    <div data-page-node-id="Sn4h9DyVo1NJZXMNnVFqDH">一本手册：《出纳操作规程》</div><div data-page-node-id="KObNKB2CrmFHmRoGtfdfVQ">一个技能文件夹（如 <code data-page-node-id="lw3naSpm4EwapijZFjXktX">concept-learning-generator/</code>）</div>
+    <div data-page-node-id="lDq0b7UNpUoXSDx0hv6u8M">封面上的分类标签与一句话简介</div><div data-page-node-id="5ucONYEkrLsDjXMVMtQLs5">SKILL.md 的 YAML 元数据（name + description）</div>
+    <div data-page-node-id="N5LSzukmnHCAyLhUizcc8r">手册正文：步骤、规范、注意事项</div><div data-page-node-id="mAwK3T3XPGUzoH8XVz39s7">SKILL.md 正文（Markdown 指令）</div>
+    <div data-page-node-id="a9D8YEUaAHe9rfs4phMZ3X">附录里附的现成表格模板 / 计算器</div><div data-page-node-id="ZroLLHZN5JB000WgcR9Pyy"><code data-page-node-id="dJKXTlSQdJRxmBbSPREVeQ">scripts/</code> 目录（可执行脚本）</div>
+    <div data-page-node-id="lrNt3JEATqAzXjTF1ryBMS">手册引用的案例册、法规汇编</div><div data-page-node-id="V2DbICttlAx6UZJrJ3SUTn"><code data-page-node-id="7Fx3MWLkNv0Ygdbgk3pV0M">references/</code> 目录（参考文档）</div>
+    <div data-page-node-id="GCaPRxBkDbOQtkMAvsP2rw">平时只看标签，接到活才抽册细读</div><div data-page-node-id="ofHdUopqA35b4IJjmdl0UH">渐进披露（Progressive Disclosure）</div>
+  </div>
+
+  <blockquote data-page-node-id="m818tdDg84HR3mRDFZGU8a">一句话记忆：<b data-page-node-id="OGCZLHyqKeUPQsGQcoDXAv">Tool 给 AI "能做什么"的手，Skill 给 AI "该怎么做"的 SOP——写好一本手册，通才立刻变专家。</b></blockquote>
+</section>
+
+<!-- ================= 模块 2 ================= -->
+<section id="m2" data-page-node-id="OPrtuE9NMR5t08XIa0TQ0J">
+  <h2 data-page-node-id="g4RfX7PXur1g9lBZAlA8YL"><span class="num" data-page-node-id="l7UyPHFThH83h1nIOXzMI8">2</span>核心机制组成</h2>
+  <p class="hint" data-page-node-id="kkaJ9aHq0T0BJ0rEfcrQmr">一个 Skill 的文件结构、三级渐进披露的加载机制，以及它为什么省上下文。</p>
+
+  <h3 data-page-node-id="jP5tSq9LzhW43Wr6DjSSQL">① 文件结构：一个文件夹就是一本手册</h3>
+  <pre data-page-node-id="6iNjB2aRmItvAvbOeJlUlq"><code data-page-node-id="1Y6hGMtZKFhzeiRfAcjgmn">my-skill/
+├── SKILL.md          # 必须。YAML 元数据(name/description) + 正文指令
+├── scripts/          # 可选。可执行脚本（如格式转换、数据处理）
+│   └── convert.py
+├── references/       # 可选。按需查阅的参考文档（API 说明、规范、案例）
+│   └── api-details.md
+└── assets/           # 可选。静态资源（模板、字体、样板文件）</code></pre>
+
+  <p data-page-node-id="SoDZgbjd01hzwQOCJ32JBJ"><code data-page-node-id="8pAkI3Zwpd2G0Bu0drCD1E">SKILL.md</code> 的开头是 YAML frontmatter，其中 <b data-page-node-id="ZtkrTJoXmK5YPEVgGA65Mx">description 是整个机制的"路由器"</b>——AI 靠它判断当前任务是否匹配这个技能：</p>
+  <pre data-page-node-id="Wurz8wzMHRJXa9pN8nwgAi"><code data-page-node-id="6srs1dZXofyXVSJpisPGIO">---
+name: pdf
+description: 读取、创建、合并 PDF 文件。触发场景：处理 PDF、提取文本、合并拆分。
+---   ← 以上为元数据（常驻上下文），以下为正文（触发后加载）
+# PDF 处理技能
+1. 读取 PDF 文本时优先使用 scripts/extract.py ...
+</code></pre>
+
+  <h3 data-page-node-id="mzbAFvWr9EBQNFXHrwM7oC">渐进披露：三级加载，上下文按需付费</h3>
+  <figure class="fig" data-page-node-id="9rxIVV1b13R0AOSgKFM8Kg">
+    <svg viewBox="0 0 680 320" width="100%" style="max-width:640px" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Microsoft YaHei',sans-serif" data-page-node-id="GErrntGwjDDP6L39LnHYyQ">
+      <defs data-page-node-id="ugbXohZ1GU8y8BA47QqOzb"><marker id="a3" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto" data-page-node-id="HXhq2JHM2FuNGwJ4YGasJ9">
+        <path d="M0,0 L8,3.5 L0,7 Z" fill="#2563eb" data-page-node-id="2YROqgVW9aGf6WGdJEMYrz"></path></marker></defs>
+      <rect x="40" y="20" width="600" height="72" rx="12" fill="#eff4ff" stroke="#2563eb" data-page-node-id="elMdCbyVzW9pMbZfGD23KK"></rect>
+      <text x="70" y="48" font-size="13.5" font-weight="700" fill="#1f2430" data-page-node-id="MQTuy82yrjeOPDNYtnvnD0">Level 1 · 元数据常驻</text>
+      <text x="70" y="68" font-size="12" fill="#5a6270" data-page-node-id="sgD2yCeHqA4uoCP5hqqvYp">每个技能的 name + description（约几十 token）始终在上下文里</text>
+      <text x="640" y="48" text-anchor="end" font-size="11.5" fill="#5a6270" data-page-node-id="59X9rYvZ7ou58oIoCu3L1Z">装 100 个技能 ≈ 一段简介的占用</text>
+      <line x1="340" y1="92" x2="340" y2="120" stroke="#2563eb" stroke-width="2" marker-end="url(#a3)" data-page-node-id="yGkg6biec62EMiqqYHp6Qz"></line>
+      <text x="352" y="112" font-size="11.5" fill="#15803d" data-page-node-id="AHVh9i1046fzZRVBN0nyaw">任务到来，AI 匹配 description → 选中某个技能</text>
+      <rect x="40" y="124" width="600" height="72" rx="12" fill="#dbeafe" stroke="#2563eb" data-page-node-id="KA1NAGfC5MZJd0rDnhEtYD"></rect>
+      <text x="70" y="152" font-size="13.5" font-weight="700" fill="#1f2430" data-page-node-id="tGY6VN99wA1AzjGLlDfUMg">Level 2 · 触发加载正文</text>
+      <text x="70" y="172" font-size="12" fill="#5a6270" data-page-node-id="svd4Nwzk7C0HhdymcdDa0K">读入该技能 SKILL.md 的正文指令（通常 &lt; 5K token）</text>
+      <text x="640" y="152" text-anchor="end" font-size="11.5" fill="#5a6270" data-page-node-id="Zu2Y8NsQKGUDRukcJ9MH5W">只有被选中的技能进入上下文</text>
+      <line x1="340" y1="196" x2="340" y2="224" stroke="#2563eb" stroke-width="2" marker-end="url(#a3)" data-page-node-id="Y8qN9VT0krgb94EpK0BRHq"></line>
+      <text x="352" y="216" font-size="11.5" fill="#15803d" data-page-node-id="onDZY1ExElv9Ty2STIDjhF">执行中需要细节 / 计算 → 按引用继续展开</text>
+      <rect x="40" y="228" width="600" height="72" rx="12" fill="#f0faf3" stroke="#15803d" data-page-node-id="NfX8N1Jk4LMVvMHaCBUe1x"></rect>
+      <text x="70" y="256" font-size="13.5" font-weight="700" fill="#1f2430" data-page-node-id="rPvvZF8htoDGDWTouAWaoZ">Level 3 · 按需展开附件</text>
+      <text x="70" y="276" font-size="12" fill="#5a6270" data-page-node-id="4gsKAYWqKcIIzZOcozJ8jK">读 references/ 参考文档；执行 scripts/ 脚本（结果返回上下文）</text>
+      <text x="640" y="256" text-anchor="end" font-size="11.5" fill="#5a6270" data-page-node-id="SspPPl0XNqVTMjVY53ExBZ">大块知识留在文件系统，用多少读多少</text>
+    </svg>
+    <figcaption data-page-node-id="asDld65t0eE30WCjVKKTtn">图：渐进披露（Progressive Disclosure）三级机制。元数据常驻负责"路由"，正文按需加载，附件执行时才展开——上下文占用始终与"当前任务"成正比，而非与"已装技能总数"成正比。</figcaption>
+  </figure>
+
+  <h3 data-page-node-id="sJ2jxQBMFNHJLIHXVqEQUA">运行链条：description 写得好坏 = 路由准不准</h3>
+  <ul data-page-node-id="HJAwloyP8IbQmELDng5F9S">
+    <li data-page-node-id="DYNPHEbiMRyZ2nMRWkJPx7"><b data-page-node-id="ZjSBpgOFfXvi4fwrjp7NiI">触发</b>：AI 拿到任务 → 扫描所有技能的 description → 判断是否相关。description 太泛会误触发，太窄会漏触发——它是 Skill 唯一的"广告位"</li>
+    <li data-page-node-id="EEACObOEVE6VMo5zUvU7J4"><b data-page-node-id="nBhApnT8LEbD7nzxfOCKD5">执行</b>：正文指令进入上下文后，等同于给模型"临时加了一段专家提示"；脚本由运行环境执行（有权限边界），输出回到上下文</li>
+    <li data-page-node-id="beKVYbrVEftvVvB7zKfu6l"><b data-page-node-id="28yXHCKQ5XZK6BgrokfWyU">可移植</b>：整个范式只是<b data-page-node-id="ijYUvI1DIS5Rn9lOkgXlKd">文件夹约定</b>，不含私有 API——同一套技能目录可跨支持该范式的平台使用，也适合放进 git 团队共享</li>
+  </ul>
+
+  <blockquote data-page-node-id="OitYT9dqSNaVLENDGQzOay">工程师视角的一句总结：<b data-page-node-id="dwtcRtsNjXQWSpxqf3Qfgg">Skill 是"提示词工程"的文件化升级——把散落的 prompt 沉淀为有目录、可版本管理、按需加载的知识包。</b></blockquote>
+</section>
+
+<!-- ================= 模块 3 ================= -->
+<section id="m3" data-page-node-id="4mH4eqALbBAJ8H7mwokHgR">
+  <h2 data-page-node-id="q3emXda1DSGW7I98EbpXHx"><span class="num" data-page-node-id="yERCUAIDIdFkehX8DDagH8">3</span>应用场景</h2>
+  <p class="hint" data-page-node-id="rqEouBAatvBm61ncIt8Fci">Skill 在真实产品与团队中的用法，以及什么时候它不是答案。</p>
+
+  <h3 data-page-node-id="iD6lYrRvTWRMJqCC2seawH">典型应用</h3>
+  <ul data-page-node-id="Tsezrf7ePgZW3Q2HF8IaOL">
+    <li data-page-node-id="p7jy45lL5aqU843OD8mkDE"><b data-page-node-id="d4otSSLL26CXHRIdiAFHJh">文档处理技能包：</b>Claude Code / Claude 应用内置 pdf、xlsx、docx 等官方技能——正文写处理流程，scripts/ 带现成脚本，用户一句话"帮我合并这三个 PDF"即触发。</li>
+    <li data-page-node-id="uBF9s4WFHnwnTGce5SbiQv"><b data-page-node-id="sDBVlyekHVAu0KyWpTtfxv">个人工作流沉淀：</b>把"每周写周报"的固定套路（数据来源、模板、语气要求）做成个人技能，AI 每周自动按 SOP 产出，质量不再随提示词随意波动。</li>
+    <li data-page-node-id="A8znWRHRGyTxybbD3Ndm9Q"><b data-page-node-id="BdxgGT93ygNXarBSIWENkd">企业 SOP 技能化：</b>把财报分析流程、品牌文案规范、客服话术手册封装成技能，新 AI 助手"入职即上岗"——知识沉淀在文件里而不是某个员工的提示词收藏夹里。</li>
+    <li data-page-node-id="RDtphJpohSAbOTTiig7ELs"><b data-page-node-id="JDiLeUqmRIMOcw4HW2j4nd">项目级团队共享：</b>技能目录放进仓库（如 <code data-page-node-id="tRs8bPeGKUJEKXKbJ85Mqv">.workbuddy/skills/</code>），随 git 分发，团队所有人（和人+AI 组合）用同一套作业规范——本项目正在实践的用法。</li>
+    <li data-page-node-id="V4zHpdKh1ZiySCQ5SMPYpm"><b data-page-node-id="904WtGzO7yNqDYhXkRmtQ6">学术溯源——技能库思想：</b>Voyager 在 Minecraft 中让 Agent 把学会的技能写成代码存入技能库、按需检索复用，是"能力沉淀为可检索资产"的经典学术验证。</li>
+  </ul>
+
+  <div class="callout warn" data-page-node-id="lNzldbgvGk1GLTXUzqdewS"><b data-page-node-id="jC27zV8Ior4DkNb5HlKvOe">不适合的场景（反例边界）：</b>① 需要<b data-page-node-id="RqaMHNw9mAoZXqQgeXEjaH">实时外部数据</b>或调用私有系统——那是连接器（如 MCP）的活，Skill 只是静态知识；② <b data-page-node-id="YKwpdMYXALo6PvlOeW64J7">单一固定 API 调用</b>——直接注册 Tool 更简单，包一层 Skill 纯属绕路；③ <b data-page-node-id="POUpeYX6ELAbKo5KT4J5Rq">频繁变化的动态知识</b>——技能是手动维护的文件，时效性内容会悄悄过期；④ <b data-page-node-id="LjHfoO5PTF7j10TBokerHX">无触发规律的随口问答</b>——靠 description 路由的路由器接不住"随机聊天"。</div>
+</section>
+
+<!-- ================= 模块 4 ================= -->
+<section id="m4" data-page-node-id="7npM6662Xp46oHh5HwA5DU">
+  <h2 data-page-node-id="z75uwNwQLUXdG1F8yAzZz7"><span class="num" data-page-node-id="h7jctEtDgSeuzeHs5UPeDi">4</span>易混淆边界</h2>
+  <p class="hint" data-page-node-id="6LJg5eExZKyEIIlOXsFfCV">最容易混的三组概念，一组口诀收尾。</p>
+
+  <h3 data-page-node-id="6PM3GDE3E9FImpnWafug4x">组一：Skill vs Tool（说明书 vs 工具）</h3>
+  <table data-page-node-id="buKXx8ISRzTsmHmHOwwZRA">
+    <tbody><tr data-page-node-id="LFOEffhUMdQfG0V4uiQyJo"><th style="width:26%" data-page-node-id="WLTZFFRRznwfjvx42jrUQY">差异维度</th><th data-page-node-id="artBTxSjHQqhZEc8Go3wcy">Skill（知识包）</th><th data-page-node-id="0ZQEVFNW2Xv3m9tshAvDIW">Tool（工具）</th></tr>
+    <tr data-page-node-id="Stu1FKCnE8npPSeFMp5qeu"><td data-page-node-id="b9uw6cfzMkAP6piWCZyDRO">本质</td><td data-page-node-id="PhMktW8U8TDyxWaHleIZR9"><b data-page-node-id="72GguSQ99YVE3VSDHAQbzR">程序性知识</b>：怎么做事的文档+脚本</td><td data-page-node-id="DkesG1TlsAXVRLifGBj2jm"><b data-page-node-id="u0A5I8QMayYJDRletO3430">能力接口</b>：可直接调用的函数/API</td></tr>
+    <tr data-page-node-id="7o495Dzd1ylWPgwkYI3Byr"><td data-page-node-id="MseC8ER4ukA3CsRjLD2vZn">形态</td><td data-page-node-id="2lIiagDDO4r4d30jDm0ksP">文件夹（Markdown 为主）</td><td data-page-node-id="rFDjmKCqBf5Km3TCFZP6lO">注册的函数签名（JSON Schema）</td></tr>
+    <tr data-page-node-id="aNrcb82KOJ4bWQKw2qwzk3"><td data-page-node-id="kiIBjWCgFmCVmyFL7uH3ir">上下文占用</td><td data-page-node-id="32O0jzf93DdZM3WrjuolDF">渐进披露、按需加载</td><td data-page-node-id="S2jw5aGrxoGHhXU3AeBxLk">工具定义通常常驻上下文</td></tr>
+    <tr data-page-node-id="cZM6FAjqTnPKyRWG3SEd2E"><td data-page-node-id="9GfMHUM8W9a2H8ZRmGWG7e">关系</td><td colspan="2" data-page-node-id="uAGQfgmzr9cHnJqdnORWXF">Skill 正文里可以<b data-page-node-id="1a9o7awdOBtCYVACDko5oW">指导模型使用 Tool</b>；Tool 不需要知道 Skill 存在</td></tr>
+  </tbody></table>
+
+  <h3 data-page-node-id="OjBmnXNIkB2CJ2PpiKk0sL">组二：Skill vs MCP / 连接器（说明书 vs 供货渠道）</h3>
+  <table data-page-node-id="icjhB5ExXFQ0eaQYVtwbLt">
+    <tbody><tr data-page-node-id="q1qc4iOoWrFHQftdD3ZaCp"><th style="width:26%" data-page-node-id="aoDGPafj1rNDQ2BiEcJMCJ">差异维度</th><th data-page-node-id="k6CCZomUBZcndRi7cZblyo">Skill</th><th data-page-node-id="vbAqtslJLjzE73iVRt8LtA">MCP / 连接器</th></tr>
+    <tr data-page-node-id="4e2vMTJ9NsbzJaCJRwdKaf"><td data-page-node-id="2KzfSzn11A6Wiz08yyBrNs">解决什么</td><td data-page-node-id="3HVMw6RE5TDUAXRNJN9zxN">"<b data-page-node-id="xBYpWmBY0UkDNNsWFR5dJu">怎么做事</b>"（知识、流程、规范）</td><td data-page-node-id="WckVAq3AWOkWePOc5c6goA">"<b data-page-node-id="ciSpYoII1AObw28Aot2bGL">接到哪里</b>"（外部系统的标准化接入）</td></tr>
+    <tr data-page-node-id="FIuwCp1W48O4Tudt2KZGFO"><td data-page-node-id="NartcIiBL3JGRK8tMa6pOy">形态</td><td data-page-node-id="ZYPBDVsKAa67rkP2F3i2Hq">文件约定（文件夹）</td><td data-page-node-id="XLXPK7bCSQLJGxDG1atI4H">协议 + 服务端（实时通信）</td></tr>
+    <tr data-page-node-id="BBHiYmWc2TDytz2izPVppH"><td data-page-node-id="qejOHF5mwgLxPm09NH8fNU">时效性</td><td data-page-node-id="JtqcDwyYqpxNgoTY1vaO23">静态文档，手动维护</td><td data-page-node-id="41m5MpWsSy9jIMyDyF62AG">实时读写外部系统的活数据</td></tr>
+    <tr data-page-node-id="nYh2bVjLPLWB8IEDz6cFq0"><td data-page-node-id="nljMLbLUp2ZyoKAR8E77Wm">关系</td><td colspan="2" data-page-node-id="IrU2gRQPkLINbpnCCuFpgf">互补：一本"操作 GitHub 的手册"（Skill）+ 一条 GitHub 连接（MCP），配合使用威力最大</td></tr>
+  </tbody></table>
+
+  <h3 data-page-node-id="1xXxOmz3Y09t3yxjbyX5eP">组三：Skill vs Prompt Template（提示词模板）</h3>
+  <table data-page-node-id="E9Wy1Q82cTUy2Ky2DXvs7r">
+    <tbody><tr data-page-node-id="aolbh0wOrHJfFHO7DPZb38"><th style="width:26%" data-page-node-id="VdNXTDqXltwPc04BtKnNc1">差异维度</th><th data-page-node-id="0F0XSkCFPUM339rzvAqIPP">Skill</th><th data-page-node-id="BaF4E4Vu6sMGQHNIWFF3WG">Prompt Template</th></tr>
+    <tr data-page-node-id="oNNEeIXXM5VdxCkGGTtDwy"><td data-page-node-id="WTXWI4ks9xvSHgYhdYKcc9">结构</td><td data-page-node-id="27sTECpHxT3T1BpyGUJlYh">多级文档 + 脚本 + 资源</td><td data-page-node-id="W5spQvA4NiB4vvAyLTncOA">单段带占位符的文本</td></tr>
+    <tr data-page-node-id="ON7KTAqIEtHDto9qOlMMRG"><td data-page-node-id="I3kJahPt7BzUAszGnZC8Ox">触发方式</td><td data-page-node-id="hGmNfv2YqsCFQyz5szpEN9">AI 依据 description <b data-page-node-id="fzl5wqkcQl2igqBwLto4Pc">自主路由</b></td><td data-page-node-id="m5w1AWdAjdjGa99wkLMIoo">人手动选用、填空</td></tr>
+    <tr data-page-node-id="3ICvgqwF2Q9Jl7SmEnGPZT"><td data-page-node-id="NsZiMbXVlfGcoiMosXNhZy">可组合性</td><td data-page-node-id="LY59btNlbJIJxJ3UDVJTVb">可带脚本执行、可互相引用</td><td data-page-node-id="EaPQ4GyJDAJkei0jOV3uVy">独立使用，无加载机制</td></tr>
+  </tbody></table>
+
+  <div class="callout ok" data-page-node-id="VDeoibUUaIOYPH4S0fi95p"><b data-page-node-id="SRAlyR9tnAgOJdQ1xlaub2">判断口诀：</b>"<b data-page-node-id="r6DOYFqJnFzvHpP1JjCEJA">Tool 是锤子，Skill 是木工手册，MCP 是五金店供货渠道。</b>"缺能力加 Tool，缺方法写 Skill，缺数据接 MCP。接到任务先问一句：<b data-page-node-id="e1jDoUrScXnybk5AM6IM51">AI 是"不会干"（缺 Tool）还是"不知道怎么干好"（缺 Skill）？</b></div>
+</section>
+
+<!-- ================= 模块 5 ================= -->
+<section id="m5" data-page-node-id="BTgUVroEa7Orqkz8XoWbh4">
+  <h2 data-page-node-id="U1B6jdKXWqmI2EVfSh4OqO"><span class="num" data-page-node-id="WFnt9ASyDFYUqtU54o05Rf">5</span>参考来源</h2>
+  <p class="hint" data-page-node-id="80FSosMU5oUMPqnkVGmub2">按权威度排序；访问日期均为 2026-09-06。</p>
+  <ol data-page-node-id="cvp6iiJ8OsrzxTpDY2z0Gx">
+    <li class="src" data-page-node-id="3m3G6CAwkQ9hxr2fVgvlWK"><b data-page-node-id="X5vQjf0WIKNouilOpCPGod">[官方工程博客] Equipping Agents for the Real World with Agent Skills</b> — Anthropic Engineering, 2025 —
+      <a href="https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills" data-page-node-id="v5DrDDL3okQ64Rg6rIuxYI">anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills</a> — Agent Skills 范式与渐进披露机制的官方阐述，模块 2 的主要依据。</li>
+    
+    <li class="src" data-page-node-id="dOODMJszoYFoQYXtw9KamJ"><b data-page-node-id="4Paq31hdXZHHzvmg8p59yE">[官方公告] Introducing the Model Context Protocol</b> — Anthropic, 2024 —
+      <a href="https://www.anthropic.com/news/model-context-protocol" data-page-node-id="XJZ1CMY55jnkYuSQXPIywc">anthropic.com/news/model-context-protocol</a> — MCP 协议的官方发布文，模块 4 组二的对照方。</li>
+    <li class="src" data-page-node-id="25ZUQg6cJuNxSLJnBSmkFE"><b data-page-node-id="JBy3UBTMBFAyPooIeIxvmK">[原始论文] Voyager: An Open-Ended Embodied Agent with Large Language Models</b> — Wang et al., 2023 —
+      <a href="https://arxiv.org/abs/2305.16291" data-page-node-id="HBLEe5L9Ao1u6AEA27apXY">arxiv.org/abs/2305.16291</a> — "技能库"思想的学术源头：能力沉淀为可检索、可复用的资产。</li>
+    <li class="src" data-page-node-id="9kZBW32UrbCNHnrx4FHqpu"><b data-page-node-id="okSsHEtDBuZSPZQQ37gMv6">[原始论文] Toolformer: Language Models Can Teach Themselves to Use Tools</b> — Schick et al., 2023 —
+      <a href="https://arxiv.org/abs/2302.04761" data-page-node-id="HqqCKU2oQLjMsIOyfMf3pK">arxiv.org/abs/2302.04761</a> — Tool（能力接口）一侧的奠基工作，模块 4 组一的对照方。</li>
+    <li class="src" data-page-node-id="eWLrX8SLYLt8EhePRDCBlR"><b data-page-node-id="U5BfDGc684zVGvqvrAkM0i">[原始论文] Gorilla: A Large Language Model Connected with Massive APIs</b> — Patil et al., 2023 —
+      <a href="https://arxiv.org/abs/2305.15334" data-page-node-id="0RAwVjHA8DCPlQc87OeS9s">arxiv.org/abs/2305.15334</a> — 大模型连接海量工具的能力与局限，说明为何还需要 Skill 层的流程知识。</li>
+    <li class="src" data-page-node-id="f0vxGjD2td35CG8DPQVc80"><b data-page-node-id="gC2zqgwubmeuJR0oMN2FWb">[综述论文] Tool Learning with Large Language Models: A Survey</b> — Qu et al., 2024 —
+      <a href="https://arxiv.org/abs/2405.17935" data-page-node-id="HyUgXjkccLEC7pk36rtZ8R">arxiv.org/abs/2405.17935</a> — 系统梳理"工具学习"任务全景（工具创建/调用/调度），支撑模块 2 与模块 4 的概念分层。</li>
+  </ol>
+  <p class="src" data-page-node-id="RN2Jf3ci9mxnoPfoV5AT6i">注：① Agent Skills 是 2025 年起快速演进的范式，各平台命名与细节以<b data-page-node-id="M44S9WGFviphhSCKl0Eb6m">各家最新官方文档</b>为准；② 本资料来源限定为 Anthropic 官方（含其文档站 docs.claude.com）与 arXiv 论文，符合本项目的来源约束。</p>
+</section>
+
+<!-- ================= 模块 6 ================= -->
+<section id="m6" data-page-node-id="rY7DuC38NrCDsg253A5Yqj">
+  <h2 data-page-node-id="DM4GzTK44Vus5QLO0NzqRF"><span class="num" data-page-node-id="wxrD7zGhp6sD6rkDFxS1z2">6</span>学习目标</h2>
+  <p class="hint" data-page-node-id="2LTUQFH6XHN6JmRWfPIrdu">学完本资料后应能做到（括号内为对应检验题）。</p>
+  <ol data-page-node-id="FPmBk71zXXSGzLYrEmC3PE">
+    <li data-page-node-id="m4yDKmR6NwckchQ1y04xAg"><b data-page-node-id="S206C50VTi59o7tg19AhsB">能解释</b> Skill 是什么，并用"岗位 SOP 手册"比喻向他人复述，说明各文件角色的对应关系（→ 自测 Q1）</li>
+    <li data-page-node-id="jEMhOV7dyIs7QNWWp1ZuAM"><b data-page-node-id="xrbblXChjEHwLFSdgDEEf8">能画出</b> 渐进披露三级加载机制，说清每级进入上下文的时机（→ 自测 Q2/Q3）</li>
+    <li data-page-node-id="sZdrcWw5GcuzafHZNt6x17"><b data-page-node-id="hIIw50dCOvkUQkKMBgZ767">能区分</b> Skill、Tool、MCP 三者的职责，并为一句话需求选出正确的实现层（→ 自测 Q4/Q5）</li>
+    <li data-page-node-id="0YM80usB0wIg5O6Ebckdq4"><b data-page-node-id="Mr7EuT07GHgcmnyCwMRLhu">能写出</b> 一个合格的 description（含触发场景关键词），并预判误触发/漏触发的风险（→ 自测 Q6）</li>
+    <li data-page-node-id="iUpqLXI1ftsRetyvO7DXlp"><b data-page-node-id="zdYjT7rYFokTj16lxTFLv2">能设计</b> 一个把团队 SOP 技能化的完整方案（结构、存放位置、共享方式、安全审查）（→ 思考题 T3，自测 Q7）</li>
+  </ol>
+</section>
+
+<!-- ================= 模块 7 ================= -->
+<section id="m7" data-page-node-id="ivGi8EsXh2OviaQpahUt7M">
+  <h2 data-page-node-id="yVPoYzicTrzzoMGJcesWl1"><span class="num" data-page-node-id="LGMX6ihY9G8tICa0OWCMIS">7</span>核心思考题</h2>
+  <p class="hint" data-page-node-id="56tInnaaBTdIrHABHfTGVi">开放题，没有标准答案；附思考提示。</p>
+
+  <div class="qa" data-page-node-id="o01Oydz4wbQ8YqEAzmQsPT"><b data-page-node-id="9REdqHjCmQCQXj0Cd2sMfU">T1 · Skill 与 RAG 的哲学分野：</b>两者都是"把知识按需放进上下文"，一个靠意图路由（description 匹配），一个靠相似度检索（向量匹配）。程序性知识（how-to）和事实性知识（what）为什么适合不同的路由方式？边界案例（如"处理某种罕见文件格式"）该归谁管？<br data-page-node-id="BI0qlvsgGPOb7xu7hdBw7L">
+    <span class="hint" data-page-node-id="xJd6ksStb57e9gs8E5dfZh">思考提示：RAG 的检索单元是"片段"，Skill 的检索单元是"整本手册+可执行附件"；想想"知识是否需要配套动作（脚本）"这条判据。</span></div>
+
+  <div class="qa" data-page-node-id="BmTrig0X4r1Gc1A5Xn0EB3"><b data-page-node-id="lAghwfD4tpVTS2tDgU2AcB">T2 · 路由的脆弱性：</b>一个技能装了半年从未被触发过，可能有哪些原因？如何系统性地测试和调试 description 的触发可靠性？<br data-page-node-id="jm8yADGDT30uLrEuoyBsem">
+    <span class="hint" data-page-node-id="v2HG5U443ESDdC3MzVaxYL">思考提示：往三个方向找——description 太窄（缺触发词）、被邻居技能"截胡"（语义重叠）、任务措辞从未落在触发词上；测试可构造正例/反例任务清单批量验证。</span></div>
+
+  <div class="qa" data-page-node-id="BdqkqOrQwO0YEPJJrQYvAi"><b data-page-node-id="PWM7hZrnQTJRNP5Cv7vdAT">T3 · 技能的安全边界：</b>从市场安装第三方 Skill，本质上等于"允许一段别人写的指令在匹配时注入你的上下文"。这带来哪些风险（提示注入、恶意脚本、供应链）？一个技能市场应该设计哪些防线？<br data-page-node-id="OF8BnrSWtVyQr4FUYOtoZt">
+    <span class="hint" data-page-node-id="6fc5qogsGgIBSYEKlnvp9A">思考提示：把 Skill 类比成"软件包管理器里的包"——历史上 npm/PyPI 的供应链攻击剧本会怎么重演？想想静态审查（签名、扫描）、运行时隔离（脚本沙箱）、权限最小化三层。</span></div>
+</section>
+
+<!-- ================= 模块 8 ================= -->
+<section id="m8" data-page-node-id="PlMdvzXwq8uBeWNzCAf3IQ">
+  <h2 data-page-node-id="FAMekJM2YiUOQuwgKeXvtt"><span class="num" data-page-node-id="xCjLW7wqwF2rded5mI9zDE">8</span>自测问题</h2>
+  <p class="hint" data-page-node-id="HvzW9ktERU4a1z8AHwwaGr">先自己作答，再对照答案。难度递增。</p>
+
+  <div class="qa" data-page-node-id="8ZpZAhayKvhAIuFs90Cdqn"><b data-page-node-id="8tA7pPWf6KTtRO3gip9MSW">Q1（识记）</b>一个标准 Skill 文件夹的最小必需内容是什么？各可选目录放什么？<div class="ans" data-page-node-id="fC44MDHmwMq7ZmsSRzuKb7"><b data-page-node-id="NLa7XrY9KAsnib0qMG3fa7">答案：</b>必需：<code data-page-node-id="vW7ZVrWDJHKqCx4qpqogZy">SKILL.md</code>（YAML frontmatter 含 name/description + Markdown 正文指令）。可选：<code data-page-node-id="XZnLx4n73k5Ti5DLemfXc5">scripts/</code>（可执行脚本）、<code data-page-node-id="qVZDHcCeuau5W9sFrZzD8Y">references/</code>（按需查阅的参考文档）、<code data-page-node-id="kpjYqgIVsQdvBG7WS1GmSm">assets/</code>（模板等静态资源）。（对应模块 2-①）</div></div>
+
+  <div class="qa" data-page-node-id="vKaqNFiiptVBZFdv1MuuZk"><b data-page-node-id="j7uuI1pMvu8vGHBGydF1cW">Q2（识记）</b>渐进披露的三个级别分别是什么？每级的内容何时进入上下文？<div class="ans" data-page-node-id="ApvBQc2furOj0J07AVFI3j"><b data-page-node-id="HdbyzQ71uNeJbTTa9BpaVv">答案：</b>L1 元数据（name+description）常驻上下文，负责路由；L2 SKILL.md 正文在任务匹配后加载；L3 references/scripts 等附件在执行过程中按需读取/运行。占用与"当前任务"成正比，而非与"已装技能数"成正比。（对应模块 2）</div></div>
+
+  <div class="qa" data-page-node-id="vA819ZufggXdoR6FeA8gWW"><b data-page-node-id="0a4ZmM5h78BmBctRlyhaKQ">Q3（理解）</b>为什么说 description 是"整个 Skill 机制的路由器"？写得太泛或太窄各有什么后果？<div class="ans" data-page-node-id="vfAawKP8YTeTiAwF6pFGzX"><b data-page-node-id="cIG48ggrEABqzxYGuUMlGI">答案：</b>AI 完全靠 description 判断当前任务是否匹配该技能——正文再好，路由失败就永远不会被读。太泛：无关任务误触发，污染上下文甚至带偏行为；太窄：该触发的任务漏触发，技能形同虚设。（对应模块 2、思考题 T2）</div></div>
+
+  <div class="qa" data-page-node-id="rLejowPpEiXdHTrlIEo6gC"><b data-page-node-id="12VVTbaioIPB0JdYFOAiFh">Q4（辨析）</b>"我给 AI 写了一份《Python 数据清洗规范》文档放进技能目录，所以我现在有了一个 Tool。"这句话错在哪？<div class="ans" data-page-node-id="DIvEInW1QMT9RgE3ccCAJA"><b data-page-node-id="K0YkJNIRtcIUdNXCplTfRx">答案：</b>混淆了 Skill 与 Tool。那份文档是程序性知识=Skill（教 AI 怎么做）；Tool 是注册成函数签名的能力接口（如代码执行器本身），可被直接调用。两者是互补关系：Skill 正文可以指导 AI 如何使用 Tool。（对应模块 4 组一）</div></div>
+
+  <div class="qa" data-page-node-id="Fjj6ZTaafIvEnAOkVWHEHv"><b data-page-node-id="71r5lhJOkFxSGAVcXiySP6">Q5（应用）</b>三个需求分别该用 Skill、Tool 还是 MCP？① 让 AI 能查询公司内部工单系统；② 让 AI 会按公司规范写品牌周报；③ 让 AI 能执行 Python 做数据计算。<div class="ans" data-page-node-id="DWxGdRhCgW196EA4KAcwXT"><b data-page-node-id="oWNScQkjBadchNOsBMxvN7">答案：</b>① MCP/连接器（需要实时接入外部私有系统）；② Skill（静态流程知识，无需外部连接）；③ Tool（能力接口，注册代码执行函数即可）。口诀：缺数据接 MCP，缺方法写 Skill，缺能力加 Tool。（对应模块 4 口诀）</div></div>
+
+  <div class="qa" data-page-node-id="zQmVadDJ73qWSUX2knNyoq"><b data-page-node-id="JrygTD10A6DROu5nsj1Bgr">Q6（应用）</b>为"把会议录音转写并整理成纪要"这个技能写一条合格的 description。<div class="ans" data-page-node-id="UOuffAbBuNF6K4DRYS2md5"><b data-page-node-id="hpB2VDdjth0GT1EQYmoi1u">答案（示例）：</b>"会议录音转写与纪要整理技能。将音频/视频转写为文字，按模板整理为含决议、待办的会议纪要。触发场景：会议录音、转写、纪要、会议记录、action items。"要点：动词+名词的具体场景词、涵盖用户可能的多种说法、不含无关泛词。（对应模块 2、学习目标 4）</div></div>
+
+  <div class="qa" data-page-node-id="tbOiVqW0YKCWPqULtIJAMt"><b data-page-node-id="tVIPEQWDtTysBff50Ik0Px">Q7（深度·面试）</b>公司要把客服团队三年的处理经验技能化。请给出完整方案：结构设计、路由可靠性保障、权限与安全、迭代机制。<div class="ans" data-page-node-id="uXFgM2hJ87BqpkLyEI5PX1"><b data-page-node-id="oLSg5YgjAV7WpulDACe5Wn">答案要点：</b>① 结构：按问题域拆分技能（退款/物流/投诉升级），SKILL.md 写决策流程，references/ 放政策原文，scripts/ 放工单查询等可执行动作；② 路由：用历史真实工单构造触发测试集，批量验证命中/误触率，迭代 description；③ 安全：脚本最小权限（只读工单系统+白名单动作）、人工确认高危操作（退款执行）、技能入库前审查（供应链防护）；④ 迭代：把新案例沉淀回 references/，季度清理过期政策——技能是"活文档"。（综合模块 2/3 与思考题 T3）</div></div>
+</section>
+
+<footer data-page-node-id="6riPPqEV7G5gJYPZ3acYSV">
+  由 concept-learning-generator 技能生成 · 八模块结构 · 来源访问日期 2026-09-06<br data-page-node-id="0CNQbXZ835rSgjG34L3pAg">
+  保存路径：.workbuddy/skills/concept-learning-generator/learning-materials/skill.html
+</footer>
+
+</div>
+
+
+</body></html>
